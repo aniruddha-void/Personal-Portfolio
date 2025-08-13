@@ -1,17 +1,20 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.FROM_EMAIL;
-
-export async function POST(req, res) {
-  const { email, subject, message } = await req.json();
-  console.log(email, subject, message);
+export async function POST(req) {
   try {
+    const { email, subject, message } = await req.json();
+
+    if (!process.env.RESEND_API_KEY || !process.env.FROM_EMAIL) {
+      return NextResponse.json({ error: "Server email config missing" }, { status: 500 });
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const data = await resend.emails.send({
-      from: fromEmail,
-      to: ["ermirakajtazi8@gmail.com", email],
-      subject: subject,
+      from: process.env.FROM_EMAIL,
+      to: ["anirudhabhandare4303@gmail.com", email],
+      subject,
       react: (
         <>
           <h1>{subject}</h1>
@@ -21,8 +24,9 @@ export async function POST(req, res) {
         </>
       ),
     });
+
     return NextResponse.json(data);
   } catch (error) {
-    return NextResponse.json({ error });
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }

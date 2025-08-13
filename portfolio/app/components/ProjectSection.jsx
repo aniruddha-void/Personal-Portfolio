@@ -6,32 +6,32 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Wallet Dashboard",
+    title: "Real Estate Listing Website ",
     description:
-      "The Wallet Dashboard project aims to create a user-friendly and efficient platform for managing digital wallets and financial assets",
-    image: "/images/projects/WalletDashboard.png",
+      " Team Project Real estate website we can buy home or sell ",
+    image: "/images/projects/estate.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/ermirakajtazi/Wallet_Dashboard",
+    gitUrl: "https://github.com/Vickysrivasta21/real-estate-project.git",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "MERN Website Crawler",
+    title: "Real Time Chat ",
     description:
-      "Single page application. The primary purpose of a website crawler is to index the content of websites for search engines, allowing ...",
-    image: "/images/projects/Crawler.png",
+      "Real time chat made By using Mern stack and socketio",
+    image: "/images/projects/chat-img.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/ermirakajtazi/MERN_Website_Crawler",
+    gitUrl: "https://github.com/aniruddha-void/real-time-chat.git",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "UI Components Library",
+    title: "Expense Tracker",
     description:
-      "A collection of reusable UI components for React built with TypeScript, Rollup, Storybook, and Tailwind CSS.",
-    image: "/images/projects/Components.png",
+      "Expense Tracker Using Reactjs Firebase and Chartjs",
+    image: "/images/projects/expense.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/ermirakajtazi/UI-Components-Library",
+    gitUrl: "https://github.com/aniruddha-void/expense-tracker.git",
     previewUrl: "/",
   },
   {
@@ -134,16 +134,16 @@ export const ProjectSection = () => {
           name="All"
           isSelected={tag === "All"}
         />
-        <ProjectTag
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
-        />
-        <ProjectTag
+        /> */}
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
-        />
+        /> */}
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (

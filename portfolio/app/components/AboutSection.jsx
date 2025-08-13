@@ -9,17 +9,14 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>HTML, JavaScript and CSS</li>
-        <li>React JS / React Native / Nextjs / Typescript</li>
-        <li>CSS Flexbox / CSS Grid /Material UI / Tailwind/ Bootstrap</li>
-        <li>
-          Restful APIs / MongoDB, MySQL/ React Query/ Firebase / Redux / Redxu
-          Saga
-        </li>
-        <li>Agile Metodology / GIT Hub / GITLAB / Jira / Monday</li>
-        <li>
-          Automated Code Review / ESLint for JavaScript / TSLint for TypeScript
-        </li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React.js</li>
+        <li>Node.js, Express.js</li>
+        <li>MongoDB</li>
+        <li>C, C++</li>
+        <li>Java</li>
+        <li>Database Management Systems (DBMS)</li>
+        <li>Data Structures and Algorithms (DSA)</li>
       </ul>
     ),
   },
@@ -28,11 +25,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>
-          Master in Application of Information and Communication Technologies in
-          Teaching
-        </li>
-        <li>Bachelor in Computer Science</li>
+        <li>Bachelor of Technology (B.Tech) – Pursuing (Expected 2028)</li>
+        <li>Higher Secondary Education (12th, Science Stream) – Vishwasattya Junior College of Science, 2024</li>
       </ul>
     ),
   },
@@ -41,15 +35,18 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>
-          CONFERENCES AND SEMINARS (09/2020 - Present) Assessing the Impact of
-          Mobile Educational Games on Student’s Success within Mathematics
-          Subject in Primary Schools
-        </li>
-        <li>SQL Development and Administration Certification</li>
-        <li>Front End Training</li>
-        <li>MongoDB Basics Certification</li>
-        <li>Networking Academy Entrepreneurship</li>
+        <li>Virtual AI & ML Internship – Eduskills & AICTE</li>
+        <li>Web Development Course Certification</li>
+        <li>Introduction to SQL – Google</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Internships",
+    id: "internships",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Virtual AI & ML Internship – Eduskills & AICTE (July 2025)</li>
       </ul>
     ),
   },
@@ -72,15 +69,15 @@ export const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am web developer with a passion for creating interactive and
-            responsive web applications. I have experience working with HTML /
-            JavaScript / CSS / React JS / React Native / Nextjs / Typescript CSS
-            Flexbox / CSS Grid / Material UI / Tailwind / Bootstrap Restful APIs
-            / MongoDB, MySQL / React Query / Redux / Redxu Saga / Firebase /
-            ESlint Agile Metodology / GIT Hub / GITLAB / Jira / Monday. I am a
-            quick learner and I am always looking to expand my knowledge and
-            skill set. I am a team player and I am excited to work with others
-            to create amazing applications.
+            I am an aspiring Full Stack Developer with a strong focus on the MERN Stack
+            (MongoDB, Express.js, React.js, Node.js).
+            I have hands-on experience with HTML, CSS, JavaScript,
+            React.js, Node.js, Express.js, and MongoDB, along with a solid foundation in C, C++,
+            Java, DBMS, and Data Structures & Algorithms (DSA). Passionate about building interactive and responsive web applications,
+            I continuously work on improving my skills in both front-end and back-end development. My ultimate goal is to become a professional Full Stack MERN Developer
+            and contribute to creating innovative, real-world applications that make an impact.
+
+
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

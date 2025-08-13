@@ -8,10 +8,10 @@ import Link from "next/link";
 export const HeroSection = () => {
   const handleDownload = () => {
     const pdfPath =
-      "https://drive.google.com/file/d/1l3Ars_2cAlV6zbrY6f26SQSrT7aW6_eJ/view?usp=sharing";
+      "https://drive.google.com/file/d/1_-iGa8mzFonxaDxDpmobi5-XMELj8RIn/view?usp=sharing";
     const link = document.createElement("a");
     link.href = pdfPath;
-    link.setAttribute = ("Ermira_Kajtazi_Resume.pdf", pdfPath);
+    link.setAttribute = ("Aniruddha_Resume.pdf", pdfPath);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -31,17 +31,15 @@ export const HeroSection = () => {
             </span>
             <br></br>
             <TypeAnimation
-              sequence={["Ermira", 1000, "Web Developer", 1000]}
+              sequence={["Aniruddha Bhandare", 1000, "Full stack Developer", 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I am a Front End developer with industry experience in Web
-            Development and Mobile Applications. My top skill is JavaScript and
-            I have professional experience working with JavaScript`s frameworks
-            React and React Native.
+            I am an aspiring Full Stack Developer
+
           </p>
           <div>
             <Link
@@ -55,7 +53,7 @@ export const HeroSection = () => {
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
+                Download Resume
               </span>
             </button>
           </div>
@@ -71,8 +69,8 @@ export const HeroSection = () => {
               src="/images/hero-image.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             />
           </div>
         </motion.div>
